@@ -24,7 +24,7 @@
   border: 15px solid #dddddd;
   border-top-color: #36eee0;
   border-radius: 50%;
-  animation: loading 0.75s ease infinite;
+  animation: loading 0.85s ease infinite;
 }
 
 .loader--hidden {
