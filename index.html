@@ -16,9 +16,11 @@
       src="https://kit.fontawesome.com/5bf9be4e76.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   </head>
   <body>
     <div id="loader" class="loader"></div>
+
     <nav>
       <section class="logo">
         <h2>Fat Dev <span>&lt;/&gt;</span></h2>
@@ -32,32 +34,36 @@
         </ul>
       </section>
     </nav>
-    <main>
-      <section class="center">
-        <h2>&lt;/&gt;</h2>
-      </section>
-      <section class="text">
-        <h1>
-          Full Stack
-          <span
-            >Web Developer &<br />
-            Software Engineer</span
-          >
-        </h1>
-        <p>
-          I'm a Philippines based Web Developer and Software Engineer <br />
-          who works with businesses and corporations on <br />Web Design,
-          Software and Presentations
-        </p>
-      </section>
-      <section class="button">
-        <button onclick="window.location.href='contact-me.html'">
-          Contact Me <i class="fa-regular fa-paper-plane fa-xs"></i>
-        </button>
-      </section>
-    </main>
+
+    <div id="page" style="display: none;">
+      
+      <main>
+        <section class="center">
+          <h2>&lt;/&gt;</h2>
+        </section>
+        <section class="text">
+          <h1>
+            Full Stack
+            <span
+              >Web Developer &<br />
+              Software Engineer</span
+            >
+          </h1>
+          <p>
+            I'm a Philippines based Web Developer and Software Engineer <br />
+            who works with businesses and corporations on <br />Web Design,
+            Software and Presentations
+          </p>
+        </section>
+        <section class="button">
+          <button onclick="window.location.href='contact-me.html'">
+            Contact Me <i class="fa-regular fa-paper-plane fa-xs"></i>
+          </button>
+        </section>
+        </main>
+    </div>
   </body>
-  <script>
+  <script src="loader.js">
 
   </script>
 </html>
