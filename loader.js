@@ -1,8 +1,6 @@
-window.addEventListener("load", () => {
-    const loader = document.querySelector('.loader')
-    document.querySelector('.loader').classList.add("loader--hidden")
-
-    document.querySelector('.loader').addEventListener("transitionend", () => {
-        document.body.removeChild(document.querySelector(".loader"))
-    })
+$(window).on('load', () => {
+    $('.loader').fadeOut(1000)
+    setTimeout(function(){
+        $('#page').fadeIn(100);
+    }, 1000);
 })
