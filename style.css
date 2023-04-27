@@ -5,6 +5,38 @@
   box-sizing: border-box;
 }
 
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.7s, visibility 0.75s;
+}
+
+.loader::after {
+  content: '';
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: #36eee0;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes loading {
+  from { transform:  rotate(0turn) ;}
+  to { transform:  rotate(1turn) ;}
+}
+
 body {
   background-color: #05161a;
   height: 100vh;
