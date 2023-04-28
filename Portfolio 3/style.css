@@ -1,0 +1,172 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Add styles to the header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Add styles to the banner section */
+  #banner {
+    height: 500px;
+    background-image: url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #banner h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  #banner p {
+    font-size: 24px;
+  }
+  
+  /* Add styles to the about section */
+  #about {
+    background-color: #f2f2f2;
+    padding: 50px;
+  }
+  
+  #about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #about p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  /* Add styles to the work section */
+  #work {
+    padding: 50px;
+  }
+  
+  #work h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #work ul {
+    list-style: none;
+  }
+  
+  #work li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #work li a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px dotted #333;
+  }
+  
+  #work li a:hover {
+    border-bottom: none;
+  }
+  
+  /* Add styles to the blog section */
+  #blog {
+    background-color: #f2f2f2;
+    padding: 50px;
+  }
+  
+  #blog h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #blog ul {
+    list-style: none;
+  }
+  
+  #blog li {
+    margin-bottom: 30px;
+  }
+  
+  #blog li h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #blog li p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  #blog li a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px dotted #333;
+  }
+  
+  #blog li a:hover {
+    border-bottom: none;
+  }
+  
+  /* Add styles to the contact section */
+  #contact {
+    padding: 50px;
+  }
+  
+  #contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #contact form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #contact label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  #contact input,
+  #contact textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  #contact button {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+  }
