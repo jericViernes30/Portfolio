@@ -1,0 +1,157 @@
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(50%, 0);
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.7s, visibility 0.7s;
+}
+
+.loader::after {
+  content: '';
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: rgb(239, 55, 55);
+  border-radius: 50%;
+  animation: loading 0.85s ease infinite;
+}
+
+.page--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes loading {
+  from { transform:  rotate(0turn) ;}
+  to { transform:  rotate(1turn) ;}
+}
+
+body {
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+nav {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+nav section.logo h2 {
+  color: white;
+  padding-left: 250px;
+  font-size: 18px;
+}
+
+nav section.links {
+  position: absolute;
+  right: 0;
+  top: 4.5vh;
+}
+
+nav section.links ul {
+  padding-right: 50px;
+  list-style-type: none;
+  display: flex;
+}
+
+nav section.links ul li:hover {
+  border-bottom: 2px solid rgb(207, 231, 74);
+  transition: 0.1s all ease-in-out;
+}
+
+nav section.links ul li a {
+  text-decoration: none;
+  color: #f8dd44;
+  font-weight: bold;
+  padding: 0 18px;
+}
+
+main section.center h2 {
+  font-size: 80px;
+  color: rgb(239, 55, 55);
+  font-weight: 600;
+  text-align: center;
+  margin-top: 100px;
+}
+
+main {
+  position: relative;
+  width: 90%;
+  height: 83vh;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.10);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.4px);
+  -webkit-backdrop-filter: blur(2.4px);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 10px;
+}
+
+main section.text {
+  color: white;
+  font-weight: bold;
+}
+
+main section.text h1 {
+  font-size: 50px;
+}
+
+main section.text h1 span {
+  color: rgb(239, 55, 55);
+}
+
+main section.text p {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5em;
+  color: white;
+}
+
+main section.button {
+  position: absolute;
+  bottom: 20%;
+}
+
+main section.button button {
+  font-size: 16px;
+  margin-top: 30px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: #f8dd44;
+  letter-spacing: 2px;
+  color: black;
+}
+
+main section.button button:hover {
+  background-color: #0b1011;
+  border: 2px solid #f8dd44;
+  transition: 0.2s;
+  box-sizing: content-box;
+  color: white;
+  font-weight: 200;
+}
