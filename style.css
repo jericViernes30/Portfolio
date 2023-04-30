@@ -23,7 +23,7 @@
   width: 75px;
   height: 75px;
   border: 15px solid #dddddd;
-  border-top-color: #36eee0;
+  border-top-color: rgb(239, 55, 55);
   border-radius: 50%;
   animation: loading 0.85s ease infinite;
 }
@@ -42,6 +42,7 @@ body {
   background-image: url(bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 nav {
@@ -51,16 +52,11 @@ nav {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  background: rgba(255, 255, 255, 0.10);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(2.4px);
-  -webkit-backdrop-filter: blur(2.4px);
-  border: 1px solid rgba(255, 255, 255, 0.13);
 }
 
 nav section.logo h2 {
-  color: rgb(239, 55, 55);
-  padding-left: 50px;
+  color: white;
+  padding-left: 250px;
   font-size: 18px;
 }
 
@@ -75,13 +71,13 @@ nav section.links ul li {
 }
 
 nav section.links ul li:hover {
-  border-bottom: 2px solid rgb(239, 55, 55);
+  border-bottom: 2px solid rgb(207, 231, 74);
   transition: 0.1s all ease-in-out;
 }
 
 nav section.links ul li a {
   text-decoration: none;
-  color: rgb(239, 55, 55);
+  color: #f8dd44;
   font-weight: bold;
   padding: 0 18px;
 }
@@ -103,6 +99,12 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: rgba(255, 255, 255, 0.10);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.4px);
+  -webkit-backdrop-filter: blur(2.4px);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 10px;
 }
 
 main section.text {
@@ -119,9 +121,11 @@ main section.text h1 span {
 }
 
 main section.text p {
+  margin-top: 10px;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.5em;
+  color: white;
 }
 
 main section.button button {
@@ -130,14 +134,14 @@ main section.button button {
   padding: 8px 20px;
   border: none;
   border-radius: 50px;
-  background-color: rgb(239, 55, 55);
+  background-color: #f8dd44;
   letter-spacing: 2px;
-  color: white;
+  color: black;
 }
 
 main section.button button:hover {
   background-color: #0b1011;
-  border: 2px solid rgb(239, 55, 55);
+  border: 2px solid #f8dd44;
   transition: 0.2s;
   box-sizing: content-box;
   color: white;
