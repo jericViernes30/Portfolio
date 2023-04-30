@@ -44,9 +44,6 @@
 /* body background */
 body {
   background-image: url(bg.jpg);
-  background-size: cover;
-  background-attachment: scroll;
-  overflow: auto;
 }
 /* navigation style */
 nav {
