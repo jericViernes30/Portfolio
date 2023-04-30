@@ -20,34 +20,36 @@
   </head>
   <body>
     <div id="loader" class="loader"></div>
-
-    <div id="page">
-      <nav>
-        <section class="logo">
-          <h2>Fat Dev <span>&lt;/&gt;</span></h2>
-        </section>
-        <section class="links">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Portfolio</a></li>
-          </ul>
-        </section>
-      </nav>
+    <nav>
+      <section class="logo">
+        <h2>Fat Dev <span>&lt;/&gt;</span></h2>
+      </section>
+      <section class="links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Portfolio</a></li>
+        </ul>
+      </section>
+    </nav>
+    <div id="page" style="display: none;">
       <main>
         <section class="form">
-          <div class="container">
-            <form action="<?php $_SERVER['PHP_SELF']?>" method="POST">
-              <label for="name">Name</label>
-              <input type="text" name="name">
-              <label for="email">Email</label>
-              <input type="text" name="email">
-              <label for="message">Message</label>
-              <input type="message" name="message">
-              <button name="submit">Send</button>
-            </form>
-          </div>
+          <h2>Get in touch</h2>
+          <p>Want to get in touch? I'd love to hear from you. Here's how to reach us.</p>
+          <input type="text" placeholder="Your Name">
+          <input type="email" placeholder="Your Email">
+          <textarea id="message" cols="52" rows="6" placeholder="Your Message"></textarea>
+          <button name="submit">Send</button>
+        </section>
+        <section class="social-media">
+          <h2>Social Media Accounts</h2>
+          <ul>
+            <li><i class="fa-brands fa-facebook"></i>Facebook:<a href="https://www.facebook.com/jeric.viernes.585">https://www.facebook.com/jeric.viernes.585</a></li>
+            <li><i class="fa-brands fa-github"></i>Github:<a href="https://github.com/jericViernes30">https://github.com/jericViernes30</a></li>
+            <li><i class="fa-brands fa-artstation"></i>Artstation:<a href="https://www.artstation.com/jjviernes1">https://www.artstation.com/jjviernes1</a></li>
+          </ul>
         </section>
       </main>
     </div>
