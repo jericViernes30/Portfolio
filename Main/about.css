@@ -1,0 +1,351 @@
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(50%, 0);
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.7s, visibility 0.7s;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: rgb(239, 55, 55);
+  border-radius: 50%;
+  animation: loading 0.85s ease infinite;
+}
+
+.page--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+/* body background */
+body {
+  background-image: url(bg.jpg);
+  overflow: hidden;
+}
+/* navigation style */
+nav {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+nav section.logo h2 {
+  color: white;
+  padding-left: 250px;
+  font-size: 18px;
+}
+
+nav section.links {
+  position: absolute;
+  right: 0;
+  top: 4.5vh;
+}
+
+nav section.links ul {
+  padding-right: 50px;
+  list-style-type: none;
+  display: flex;
+}
+
+nav section.links ul li:hover {
+  border-bottom: 2px solid rgb(207, 231, 74);
+  transition: 0.1s all ease-in-out;
+}
+
+nav section.links ul li a {
+  text-decoration: none;
+  color: #f8dd44;
+  font-weight: bold;
+  padding: 0 18px;
+}
+
+main {
+  position: relative;
+  width: 90%;
+  max-height: 85vh;
+  margin: 0 auto;
+  text-align: center;
+  /* background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.4px);
+  -webkit-backdrop-filter: blur(2.4px);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 10px; */
+  margin-top: 10px;
+  margin-bottom: 30px;
+  overflow-y: auto;
+}
+
+main::-webkit-scrollbar {
+  display: none;
+}
+
+main section.profile {
+  width: 70%;
+  height: max-content;
+  position: relative;
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+  margin: 0 auto;
+}
+main section.profile .cover img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px 10px 0 0;
+}
+
+main section.profile .first-layer {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 14vh;
+}
+
+main section.profile .first-layer img {
+  max-width: 200px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+}
+
+main section.profile .first-layer .links {
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+main section.profile .first-layer .links ul {
+  list-style-type: none;
+  display: flex;
+  margin-right: 10px;
+}
+
+main section.profile .first-layer .links ul li {
+  padding: 10px;
+}
+
+main section.profile .first-layer .links ul li .link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #1da1f2;
+  display: grid;
+  place-items: center;
+}
+
+main section.profile .first-layer .links ul li .link i {
+  color: #1da1f2;
+}
+
+main section.profile .first-layer .links ul li .link2 {
+  width: 100px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: #1da1f2;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
+}
+
+main section.profile .name {
+  text-align: left;
+  margin-left: 20px;
+  color: #111;
+}
+
+main section.profile .alias {
+  display: flex;
+  padding: 5px;
+}
+
+main section.profile .alias p {
+  padding: 0 5px;
+  font-size: 13px;
+  margin-left: 11px;
+  color: #555;
+}
+
+main section.profile .bio {
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+main section.profile .bio span {
+  color: #1da1f2;
+}
+
+main section.profile .second-layer {
+  display: flex;
+  justify-content: center;
+}
+
+main section.profile .second-layer div {
+  padding: 13px 20px;
+  font-size: 15px;
+  color: #555;
+}
+
+main section.profile .second-layer .url {
+  padding: 13px 20px;
+  font-size: 14px;
+  color: #1da1f2;
+}
+
+main section.profile .second-layer div i {
+  margin-right: 7px;
+}
+
+main section.profile .second-layer .url i {
+  color: #555;
+}
+
+main section.profile .following-followers {
+  display: flex;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+main section.profile .following-followers p {
+  margin-left: 15px;
+  margin: 10px;
+}
+
+main section.profile .following-followers span {
+  font-weight: normal;
+  font-size: 13px;
+  color: #555;
+}
+
+main section.profile section.tweets nav {
+  width: 100%;
+  height: 7vh;
+}
+
+main section.profile section.tweets nav ul {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+main section.profile section.tweets nav ul li {
+  padding: 16px 87.5px;
+  color: #555;
+}
+
+main section.profile section.tweets nav ul li.tweet {
+  border-bottom: 5px solid #1da1f2;
+  color: #1da1f2;
+}
+
+main section.profile section.tweets .pinned p {
+  margin-right: 350px;
+  margin-top: 20px;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+main section.profile section.tweets .post-container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+main section.profile section.tweets .post-container .dp img {
+  width: 70px;
+  height: 70px;
+  border-radius: 40px;
+}
+
+main section.profile section.tweets .post-container .display .name {
+  font-weight: bold;
+}
+
+main section.profile section.tweets .post-container .display .name span {
+  margin-left: 10px;
+  font-weight: normal;
+  color: #555;
+}
+
+main section.profile section.tweets .post-container .display .post {
+  margin-left: 20px;
+  width: 500px;
+  height: 400px;
+
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+main
+  section.profile
+  section.tweets
+  .post-container
+  .display
+  .post
+  p.tech-stack {
+  width: max-content;
+  color: black;
+  margin-top: 10px;
+}
+
+main section.profile section.tweets .post-container .display .post .grid img {
+  width: 120px;
+  height: 120px;
+}
+
+main section.profile section.tweets .post-container .display .post .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 80px;
+  margin-top: 20px;
+  background-color: #555;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+main section.profile section.tweets .post-container .display .reacts {
+  width: 96%;
+  height: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+main section.profile section.tweets .post-container .display .reacts ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  color: #1da1f2;
+}
