@@ -1,0 +1,234 @@
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(50%, 0);
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.7s, visibility 0.7s;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid #dddddd;
+  border-top-color: rgb(239, 55, 55);
+  border-radius: 50%;
+  animation: loading 0.85s ease infinite;
+}
+
+.page--hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+/* body background */
+body {
+  background-image: url(bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* navigation style */
+nav {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+nav section.logo h2 {
+  color: white;
+  padding-left: 250px;
+  font-size: 18px;
+}
+
+nav section.links {
+  position: absolute;
+  right: 0;
+  top: 4.5vh;
+}
+
+nav section.links ul {
+  padding-right: 50px;
+  list-style-type: none;
+  display: flex;
+}
+
+nav section.links ul li:hover {
+  border-bottom: 2px solid rgb(207, 231, 74);
+  transition: 0.1s all ease-in-out;
+}
+
+nav section.links ul li a {
+  text-decoration: none;
+  color: #f8dd44;
+  font-weight: bold;
+  padding: 0 18px;
+}
+
+main {
+  position: relative;
+  width: 90%;
+  height: 80vh;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.4px);
+  -webkit-backdrop-filter: blur(2.4px);
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  border-radius: 10px;
+  margin-bottom: 50px;
+  color: white;
+  position: relative;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+  }
+
+main h1 {
+    margin: 20px 0;
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+main section.projects-container .container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: white;
+    margin-bottom: 50px;
+}
+
+main section.projects-container .projects img{
+    max-width: 950px;
+    border-radius: 10px;
+}
+
+main section.projects-container .info {
+    width: 400px;
+    position: relative;
+}
+
+
+
+main section.projects-container .info h2{
+    margin: 20px 0;
+}
+
+main section.projects-container .info p {
+    line-height: 25px;
+    font-size: larger;
+    margin: 0 auto;
+    width: 90%;
+}
+
+main section.projects-container .info p#desc {
+    height: 150px;
+}
+
+main section.projects-container .info .language {
+    width: 90%;
+    height: 20px;
+    margin: 0 auto;
+    display: flex;
+}
+
+main section.projects-container .info .language span {
+    outline: none;
+}
+
+main section.projects-container .info .legend {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section.projects-container .info .legend ul {
+    list-style-type: none;
+    display: flex;
+}
+
+main section.projects-container .info .legend ul li {
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+main section.projects-container .info .legend ul li p {
+    font-size: 13px;
+}
+main section.projects-container .info .legend ul li .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+main section.projects-container .info .legend ul li .dot-html {
+    background-color: #e34c26;
+    margin-top: 0;
+    margin-right: 5px;
+}
+main section.projects-container .info .legend ul li .dot-css {
+    background-color: #563d7c;
+    margin-top: 0;
+    margin-right: 5px;
+}
+main section.projects-container .info .legend ul li .dot-js {
+    background-color: #f1e05a;
+    margin-top: 0;
+    margin-right: 5px;
+}
+
+main section.projects-container .info .buttons {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    position: absolute;
+    left: 20px;
+}
+main section.projects-container .info .buttons button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f8dd44;
+}
+
+main section.projects-container .info .buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid #f8dd44;
+    color: white;
+}
+
