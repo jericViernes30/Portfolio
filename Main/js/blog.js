@@ -1,7 +1,7 @@
 function sophos() {
   const heading = document.getElementById("head");
   const definition = document.getElementById("def");
-  const hero = (document.getElementById("hero").src = "sophos-hero.jpg");
+  const hero = (document.getElementById("hero").src = "img/sophos-hero.jpg");
   const work = document.getElementById("work");
   const workDef = document.getElementById("work-def");
   const workDef2 = document.getElementById("work-def-2");
@@ -16,7 +16,7 @@ function sophos() {
   const step5 = document.getElementById("step5");
   const proc5 = document.getElementById("proc5");
   const setup = document.getElementById("setup");
-  const img2 = (document.getElementById("img2").src = "sophos-endpoint.jpg");
+  const img2 = (document.getElementById("img2").src = "img/sophos-endpoint.jpg");
 
   heading.innerText = "What is Sophos?";
   def.innerText =
