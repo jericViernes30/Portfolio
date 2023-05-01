@@ -7,6 +7,3 @@
       section.scrollIntoView({ behavior: 'smooth' });
     });
   });
-
-  // Add an event listener to the footer to display the current year
-  document.querySelector('footer p').textContent = `Copyrights ${new Date().getFullYear()} My Portfolio`;

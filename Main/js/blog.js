@@ -19,7 +19,7 @@ function sophos() {
   const img2 = (document.getElementById("img2").src = "img/sophos-endpoint.jpg");
 
   heading.innerText = "What is Sophos?";
-  def.innerText =
+  definition.innerText =
     "Sophos is a cybersecurity solution that offers detection and response, firewall, cloud, and managed service solutions for network security and unified threat management. Its software provides critical malware, phishing website, and ransomware prevention. While security specialists are familiar with the brand Sophos antivirus, the program is only excellent for essential malware detection. Sophos protects your device from malware, hackers, and other dangerous invaders.";
   work.innerText = "How does Sophos work?";
   workDef.innerText =
@@ -46,7 +46,7 @@ function sophos() {
 function firewall() {
   const heading = document.getElementById("head");
   const definition = document.getElementById("def");
-  const hero = (document.getElementById("hero").src = "firewall-hero.jpg");
+  const hero = (document.getElementById("hero").src = "img/firewall-hero.jpg");
   const work = document.getElementById("work");
   const workDef = document.getElementById("work-def");
   const step1 = document.getElementById("step1");
@@ -60,7 +60,7 @@ function firewall() {
   const step5 = document.getElementById("step5");
   const proc5 = document.getElementById("proc5");
   const setup = document.getElementById("setup");
-  const img2 = (document.getElementById("img2").src = "setup.jpeg");
+  const img2 = (document.getElementById("img2").src = "img/setup.jpeg");
 
   heading.innerText = "What is Firewall?";
   def.innerText =

@@ -2,11 +2,12 @@
 body {
     font-family: Arial, sans-serif;
     color: #333;
+    overflow-x: hidden;
   }
   
   /* Style the header */
   header {
-    background-color: #f2f2f2;
+    background-color: #707bbb;
     padding: 20px;
   }
   
@@ -56,6 +57,17 @@ body {
   
   section li h3 {
     margin-top: 0;
+    font-weight: 900;
+  }
+
+  section li p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  #blog p {
+    line-height: 2;
+    font-size: 20px;
   }
   
   /* Style the footer */
