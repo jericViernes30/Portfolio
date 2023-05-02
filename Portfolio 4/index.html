@@ -1,103 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://kit.fontawesome.com/5bf9be4e76.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <header>
-      <h1>My Portfolio</h1>
-      <nav>
-        <ul>
-          <li><a href="#about"><i class="fa-solid fa-house" style="margin-right: 10px
-            ;"></i>About</a></li>
-          <li><a href="#projects"><i class="fa-solid fa-list-check" style="margin-right: 10px
-            ;"></i>Projects</a></li>
-          <li><a href="#contact"><i class="fa-regular fa-address-card" style="margin-right: 10px
-            ;"></i>Contact</a></li>
-          <li><a href="#blog"><i class="fa-solid fa-blog" style="margin-right: 10px
-          ;"></i>Blog</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          Hi, I'm
-          <span style="color: blue; font-weight: bold">Labigan, Allan Paul</span
-          >, a 19 year old 2nd year college student in St. Vincent College of
-          Cabuyao Laguna. Hardworking, eager to learn and a fast learner.
-        </p>
-      </section>
-      <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-          <li>
-            <h3>Project 1 - Grafana Dashboard</h3>
-            <img src="proj1.png" alt="" style="max-width: 1430px" />
-            <p>
-              Grafana is a powerful open-source analytics and visualization
-              platform that allows users to monitor, analyze, and understand
-              their data in real-time. It is widely used in various industries,
-              including IT, finance, healthcare, and manufacturing, to help
-              teams make better decisions and improve their operational
-              efficiency.
-            </p>
-            <p>
-              One of the main benefits of using Grafana is its flexibility and
-              customization options. With Grafana, users can connect to various
-              data sources, such as databases, APIs, and even IoT devices, and
-              create custom dashboards and alerts to monitor their data in
-              real-time. The platform supports a wide range of visualization
-              options, including graphs, charts, and tables, which can be
-              customized to meet the specific needs of each user.
-            </p>
-          </li>
-          <li>
-            <h3>Project 2 - Web Portfolio</h3>
-            <img src="proj2.png" alt="" style="max-width: 1430px" />
-            <p>
-              In today's digital age, having a web portfolio has become an
-              essential tool for professionals to showcase their work and
-              skills. A web portfolio, also known as an online portfolio, is a
-              collection of digital assets that demonstrate an individual's
-              expertise, creativity, and accomplishments. It can be used by
-              anyone, from artists and designers to writers and developers, to
-              showcase their work and attract potential clients or employers.
-            </p>
-            <p>
-              One of the primary benefits of having a web portfolio is the
-              ability to showcase one's work to a global audience. With a web
-              portfolio, professionals can share their work and accomplishments
-              with people from all over the world, regardless of their location
-              or time zone. This can help them reach a wider audience and
-              attract more clients or job opportunities.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <h3>Here is my contact information.</h3>
-        <p><span style="font-weight: 800"><i class="fa-solid fa-phone" style="margin-right: 10px
-          ;"></i>Phone Number:</span> 09561923872</p>
-        <p>
-          <span style="font-weight: 800"><i class="fa-solid fa-envelope" style="margin-right: 10px
-            ;"></i>Email:</span> labiganallan@gmail.com
-        </p>
-        <p>
-          <span style="font-weight: 800"><i class="fa-brands fa-facebook" style="margin-right: 10px
-            ;"></i>Facebook: </span
-          ><a href="https://www.facebook.com/allanpaul.labigan"
-            >https://www.facebook.com/allanpaul.labigan</a
-          >
-        </p>
-      </section>
-      <section id="blog" style="width: 94.5%;">
-        <h2>Blog</h2>
-        <p style="font-weight: 900; font-size: 20px">What is Firewall?</p>
+<head>
+	<title>My Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1 style="margin-bottom: 20px;">My Portfolio</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Projects</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<section>
+			<h2>About Me</h2>
+			<p>Hi, my name is Froilan Alcantara and I am a web developer.</p>
+		</section>
+		
+		<section>
+			<h2>My Projects</h2>
+			<h3>Grafana Dashboard with PostgreSQL</h3>
+			<img src="proj1.png" alt="First Project" style="max-width: 1480px
+			;">
+		</section>
+		
+		<section>
+			<h1 style="font-size: 30px; font-weight: 900;">Blog</h1>
+			<div class="blog-post">
+				<p style="font-weight: 900; font-size: 20px">What is Firewall?</p>
         <p>
           A firewall is a network security device that monitors incoming and
           outgoing network traffic and permits or blocks data packets based on a
@@ -106,7 +43,7 @@
           as the internet) in order to block malicious traffic like viruses and
           hackers.
         </p>
-        <img src="firewall-hero.jpg" alt="" style="max-width: 1000px
+        <img src="setup.jpeg" alt="" style="max-width: 1000px
         ; margin-left: 13%;">
         <p style="font-weight: 900; font-size: 20px">
           How does a firewall work?
@@ -185,13 +122,14 @@
           firewall configuration saved in a secure place so that all of your
           hard work is not lost in the event of a hardware failure.
         </p>
-        <hr />
-        <br />
-        <h2>What is Sophos?</h2>
+			</div>
+      <hr>
+      <br>
+			<div class="blog-post">
+				<h2>What is Sophos?</h2>
         <p>Sophos is a cybersecurity solution that offers detection and response, firewall, cloud, and managed service solutions for network security and unified threat management. Its software provides critical malware, phishing website, and ransomware prevention. While security specialists are familiar with the brand Sophos antivirus, the program is only excellent for essential malware detection. Sophos protects your device from malware, hackers, and other dangerous invaders.</p>
         <img src="sophos-hero.jpg" alt="" style="max-width: 1000px
         ; margin-left: 13%;">
-
         <h2 style="margin-top: 20px
         ;">How does sophos work?</h2>
         <p>Sophos Anti-Virus detects and cleans up viruses, Trojans, worms, and spyware, as well as adware and other potentially unwanted applications. Our HIPS (Host Intrusion Prevention System) technology can also protect your computer from suspicious files and rootkits. In addition, Malicious Traffic Detector can detect communications between your computer and command and control servers involved in a botnet or other malware attack.</p>
@@ -206,13 +144,13 @@
         <p>Sophos Data Control prevents the accidental leakage of personally-identifiable information from managed computers.</p>
         <h3>Sophos Device Control:</h3>
         <p>Sophos Device Control blocks unauthorized external storage devices and wireless connection technologies.</p>
-        
-      </section>
-    </main>
-    <footer>
-      <p>My Portfolio 2023</p>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+			</div>
+		</section>
+	</main>
+	
+	<footer>
+		<p>Copyright &copy; 2023</p>
+	</footer>
+	
+</body>
 </html>
