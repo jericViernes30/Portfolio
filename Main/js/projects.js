@@ -15,6 +15,7 @@ const prevBtn = document.getElementById('prev')
 let currentItem = 0
 
 nextBtn.addEventListener('click', () => {
+    colorFlipper()
 })
 
 prevBtn.addEventListener('click', () => {
